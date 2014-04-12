@@ -1,4 +1,4 @@
-module Sermonaudio
+module SermonAudio
 	class Finder
 
     @@client ||= Sermonaudio::Sermon.new.savon

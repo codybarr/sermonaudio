@@ -1,4 +1,4 @@
-module Sermonaudio
+module SermonAudio
   class Sermon
     attr_accessor :savon
     

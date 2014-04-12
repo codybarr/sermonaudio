@@ -1,4 +1,4 @@
-$:.push File.expand_path("../../lib", __FILE__)
+
 require "sermonaudio/version"     # Always require version
 require "savon"                   # Everything depends on the Savon gem. Require it right away.
 require "sermonaudio/exceptions"    # For exceptions
@@ -9,4 +9,4 @@ require "sermonaudio/client"
 require "sermonaudio/sermon"
 require "sermonaudio/finder"
 
-module Sermonaudio; end
+module SermonAudio; end
