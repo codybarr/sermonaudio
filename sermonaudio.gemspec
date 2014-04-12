@@ -7,13 +7,8 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/codybarr/sermonaudio"
   s.summary     = "Interface the SermonAudio API easily."
   s.description = "SermonAudio uses the Savon gem to interface with SermonAudio as easily as possible."
-
   s.files         = `git ls-files`.split("\n")
   s.require_paths = ["lib"]
-  
   s.add_dependency "savon"
-
-  s.add_development_dependency "rspec"
-  s.add_development_dependency "rake"
-  s.add_development_dependency "vcr"
+  s.license     = "MIT"
 end
