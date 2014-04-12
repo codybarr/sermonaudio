@@ -8,15 +8,15 @@ The SermonAudio gem enables church ruby developers who need easily access sermon
 
 To install sermonaudio, add the following line to your Gemfile:
 
-    '''ruby
-    gem 'sermonaudio'
-    '''
+```ruby
+gem 'sermonaudio'
+```
 
 Then run bundle to install it:
 
-    '''ruby
-    bundle install
-    '''
+```ruby
+bundle install
+```
     
 ## General Use
 
