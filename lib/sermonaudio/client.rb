@@ -1,14 +1,22 @@
 module SermonAudio
-  ## Require Savon library
-  include Savon
 
-  module Client
+  class Client
 
-    extend self
+    include Savon
+
+    attr_reader :client
+    operations = {speakers: :get_speakers_by_keyword, 
+                  sermons: :get_sermons_by_member_id}
     
     ## Setup the client
-    def client      
-      @sermonaudio_savon_client ||= Savon.client(wsdl: 'http://web4.sa-media.com/SASoapAPI/service.asmx?WSDL')
+    def initialize      
+      @client = Savon.client(wsdl: 'http://web4.sa-media.com/SASoapAPI/service.asmx?WSDL')
+    end
+
+    #TODO: work Finder methods into the client
+    def find(method, args = {})
+      # make calls to the right method based on the method and the arguments
+      self.client.call(operations[method], args)
     end
     
   end

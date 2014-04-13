@@ -6,7 +6,9 @@ require "sermonaudio/exceptions"    # For exceptions
 # Load Sermonaudio specific files
 require "sermonaudio/configuration"
 require "sermonaudio/client"
-require "sermonaudio/sermon"
-require "sermonaudio/finder"
+
+# omitting sermon.rb and finder.rb since their methods can be digested by client
+# require "sermonaudio/sermon"
+# require "sermonaudio/finder"
 
 module SermonAudio; end

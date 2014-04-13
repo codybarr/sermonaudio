@@ -1,7 +1,7 @@
 module SermonAudio
 	class Finder
 
-    @@client ||= SermonAudio::Sermon.new.savon
+    @@client ||= SermonAudio::Sermon.new
 
     def self.request(request_name, opts = {})
       request = @@client.request :ser, request_name, :body => opts
